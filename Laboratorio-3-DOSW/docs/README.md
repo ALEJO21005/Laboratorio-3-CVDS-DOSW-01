@@ -69,3 +69,6 @@ Los 5 valores son:
 - Apertura
 
 El más difícil de aplicar puede ser Coraje, porque es muy trasnparente en cuento a conflictos con el equipo 
+
+# Historial de Commits
+<img width="725" height="465" alt="image" src="https://github.com/user-attachments/assets/f69be553-6582-4843-be0c-844e715b0357" />
