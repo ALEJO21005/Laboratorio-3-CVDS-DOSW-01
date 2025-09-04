@@ -1,3 +1,5 @@
+package edu.dosw.lab.agilismo;
+
 public class Tarea {
     private String descripcion;
     private int puntaje;

@@ -1,3 +1,5 @@
+package edu.dosw.lab.agilismo;
+
 import java.util.Scanner;
 
 public class Integrante {
