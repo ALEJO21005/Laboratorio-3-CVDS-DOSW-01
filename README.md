@@ -2,7 +2,7 @@
 ### Juan Andres Suarez Fonseca-Santiago Carmona-Sergio Alejandro Idarraga
 
 # ✅RETO 1
-## Reglas de Negocio
+## Reglas de Negocio😎✅
 - Los números de cuenta deben tener exactamente 10 dígitos.
 - Los dos primeros dígitos corresponden al código de un banco registrado (ejemplo: 01 BANCOLOMBIA, 02 DAVIVIENDA).
 - Una cuenta bancaria no puede contener letras ni caracteres especiales, solo números.
@@ -11,18 +11,18 @@
 - Solo se pueden realizar operaciones sobre cuentas válidas y existentes.
 - El saldo de la cuenta de cada cliente no puede ser menor a cero
 
-## Funcionalidades principales
+## Funcionalidades principales👌
 - Cración cuenta bancaria que cumpla con las reglas de negocio antes de registrar la cuenta del cliente.
 - Permitir al cliente consultar su saldo en la cuenta
 - Permitir al cliente depositar dinero en su cuenta y actualizar el saldo en timepo real.
 
 
-## Actores principales
+## Actores principales 🥸
 - Cliente
 - Sistema Bankify
 - Bancos aliados
 
-## Precondiciones del sistema "Bankify"
+## Precondiciones del sistema "Bankify" 👈
 - El sistema ya debe de tener un registro de bancos con los respectivos códigos asignados.
 
 # ✅RETO 2
@@ -102,8 +102,28 @@ Facilita la extensión del sistema y mantiene el código abierto a nuevas estrat
  ## Votos divergentes
   <img width="831" height="437" alt="image" src="https://github.com/user-attachments/assets/8ba61132-f081-49b4-a360-0981bde60dec" />
 
+# ✅RETO 5
+<img width="611" height="569" alt="image" src="https://github.com/user-attachments/assets/b003adfc-8b15-4bbe-8903-5e245b4ca55d" />
+<img width="554" height="564" alt="image" src="https://github.com/user-attachments/assets/d0675cea-a6b0-41d5-95d2-b6f426044e25" />
+<img width="544" height="561" alt="image" src="https://github.com/user-attachments/assets/6777659f-b491-4c78-b0d5-b7790f2cc433" />
+<img width="1195" height="153" alt="image" src="https://github.com/user-attachments/assets/0643319f-1735-4102-9d82-664ae6352e48" />
+<img width="1194" height="244" alt="image" src="https://github.com/user-attachments/assets/aed6fa40-e12d-4965-8451-a9e080ac2875" />
 
-    
+## Cobertura inicial
+
+El proyecto fue evaluado con *JaCoCo* para medir la cobertura de las pruebas unitarias.
+
+- *Cobertura de instrucciones:* 96%  
+- *Cobertura de ramas:* 65%  
+
+Esto significa que el 96% de las líneas de código fueron ejecutadas por las pruebas, pero aún hay un 35% de condiciones (if, else, switch, etc.) que no han sido validadas. 
+
+
+
+
+
+
+
 
 
 
