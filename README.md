@@ -44,6 +44,86 @@
 ### La clase cuenta tiene la siguiente herencia:
 <img width="426" height="377" alt="image" src="https://github.com/user-attachments/assets/a941d6e0-9237-4b1f-b42f-6c4fc7235dac" />
 
+# ✅RETO 3
+## CLASS PlanningPoker(main)
+<img width="1113" height="572" alt="image" src="https://github.com/user-attachments/assets/cabafa02-9e45-4525-9fda-62fb35cd15f3" />
+<img width="880" height="324" alt="image" src="https://github.com/user-attachments/assets/1f6f50e7-3c86-4ef2-82fe-c7a50a4319ce" />
+
+## CLASS Integrante
+<img width="629" height="424" alt="image" src="https://github.com/user-attachments/assets/38071eb5-5042-4734-9f3c-a694ba291886" />
+
+## CLASS Tarea
+<img width="625" height="462" alt="image" src="https://github.com/user-attachments/assets/68fbb4eb-6bc1-4017-8f38-d1d5393c54fb" />
+
+## CLASS EstrategiaFibonacci
+<img width="850" height="396" alt="image" src="https://github.com/user-attachments/assets/e573d233-7c0c-46de-af51-6eb2d33fdc75" />
+
+## CLASS EstrategiaV(interfaz)
+<img width="703" height="112" alt="image" src="https://github.com/user-attachments/assets/b917683d-255a-4ace-8ddc-b76e4468576a" />
+
+## CLASS Votacion 
+<img width="1044" height="553" alt="image" src="https://github.com/user-attachments/assets/ccedd778-215a-4aa1-bf0f-1abf7771aea1" />
+<img width="793" height="419" alt="image" src="https://github.com/user-attachments/assets/b30ec2a9-630b-469a-b1ad-cc53273c86ae" />
+
+# 😎 Patrones de diseño utilizados
+
+## Strategy Pattern⚡:
+
+Lo encontramos en EstrategiaV (interfaz) ,EstrategiaFibonacci (implementación concreta) y Integrante recibe en el constructor una estrategia de votación.
+
+### Explicación:
+
+El patrón Strategy permite definir diferentes algoritmos de votación sin modificar la lógica principal. En este caso, se usa EstrategiaFibonacci, pero podrían añadirse otras (EstrategiaTShirtSizes, EstrategiaCustom, etc.) sin alterar el código de Integrante.
+
+## Beneficio
+Facilita la extensión del sistema y mantiene el código abierto a nuevas estrategias sin modificar las clases existentes (Principio OCP).
+
+# Principios solid 🤖
+### SRP (Single Responsibility Principle)
+- Tarea → gestiona la descripción y puntaje de la tarea.
+
+- Integrante → representa a un miembro del equipo que vota.
+
+- Votacion → controla el proceso de votación y consenso.
+
+- EstrategiaV → define cómo se vota.
+
+### OCP (Open/Closed Principle)
+- Se pueden añadir nuevas estrategias de votación (EstrategiaX) sin modificar el código existente.
+### LSP (Liskov Substitution Principle)
+- Cualquier clase que implemente EstrategiaV puede sustituir a otra sin romper el sistema.
+### ISP (Interface Segregation Principle)
+- EstrategiaV es una interfaz pequeña y específica, enfocada únicamente en el comportamiento de votar.
+# Ejecucion 💻💀
+## Votos Iguales y Puntaje final
+  <img width="814" height="438" alt="image" src="https://github.com/user-attachments/assets/34995e36-76ae-4be2-841c-9941b79716f0" />
+  <img width="781" height="112" alt="image" src="https://github.com/user-attachments/assets/f400d8b9-cfae-472d-916b-94280ccb6510" />
+  
+ ## Votos divergentes
+  <img width="831" height="437" alt="image" src="https://github.com/user-attachments/assets/8ba61132-f081-49b4-a360-0981bde60dec" />
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
