@@ -21,22 +21,18 @@ public class Cliente {
         }
 
     public double consultarSaldo(int numeroCuenta) {
-
-        for (Cuenta cuenta : cuentas) {
-            if (cuenta.getNumeroCuenta() == numeroCuenta) {
-                return cuenta.consultarSaldo();
-            }
-        }
-        return 0.0;
+        return cuentas.stream()
+                .filter(cuenta -> cuenta.getNumeroCuenta() == numeroCuenta)
+                .findFirst()
+                .map(Cuenta::consultarSaldo)
+                .orElse(0.0);
     }
 
     public void depositar(int numeroCuenta, double monto) {
-        for (Cuenta cuenta : cuentas) {
-            if (cuenta.getNumeroCuenta() == numeroCuenta) {
-                cuenta.depositar(monto);
-                return;
-            }
-        }
+        cuentas.stream()
+                .filter(cuenta -> cuenta.getNumeroCuenta() == numeroCuenta)
+                .findFirst()
+                .ifPresent(cuenta -> cuenta.depositar(monto));
     }
 
     public ArrayList<Cuenta> getCuentas() {

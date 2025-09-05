@@ -7,15 +7,13 @@ public class CuentaCorriente extends Cuenta {
     }
 
     public void permitirSobregiro(double monto) {
-        double saldoActual = consultarSaldo();
-        double nuevoSaldo = saldoActual - monto;
+        if (monto > 1000) {
+            System.out.println("El monto excede el límite de sobregiro permitido.");
+            return;  
+        }
+        setSaldo(consultarSaldo() - monto);
     }
 
-    @Override
-    public void depositar(double monto) {
-        double nuevoSaldo = consultarSaldo() + monto;
-        setSaldo(nuevoSaldo);
-    }
 
 
 

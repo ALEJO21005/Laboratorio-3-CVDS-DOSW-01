@@ -21,7 +21,26 @@ public abstract class Cuenta {
         return saldo;
     }
 
-    public abstract void depositar(double monto);
+    public void depositar(double monto) {
+        if (monto <= 0) {
+            System.out.println("El monto a depositar debe ser positivo.");
+            return;  
+        }
+        setSaldo(this.saldo + monto);  
+    }
+
+    public void retirar(double monto) {
+        if (monto <= 0) {
+            System.out.println("El monto a retirar debe ser positivo.");
+            return;
+        }
+        if (this.saldo < monto) {
+            System.out.println("Saldo insuficiente para realizar el retiro.");
+            return;
+        }
+        setSaldo(this.saldo - monto);
+    }
+
     public int getNumeroCuenta() {
         return numeroCuenta;
     }

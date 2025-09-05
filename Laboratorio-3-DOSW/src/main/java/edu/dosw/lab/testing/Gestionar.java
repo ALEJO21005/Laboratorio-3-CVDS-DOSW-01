@@ -19,8 +19,8 @@ public class Gestionar {
     }
 
     public void gestionarRetiro(Cuenta cuenta, double monto) {
-        if (cuenta != null && monto > 0 && cuenta.consultarSaldo() >= monto) {
-            cuenta.depositar(-monto);
+        if (cuenta != null && monto > 0) {
+            cuenta.retirar(monto);
         }
     }
 }

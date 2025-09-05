@@ -6,22 +6,9 @@ public class CuentaAhorro extends Cuenta {
         super(numeroCuenta, banco);
     }
 
-    @Override
-    public void depositar(double monto) {
-        double nuevoSaldo = consultarSaldo() + monto;
-        setSaldo(nuevoSaldo);
-    }
-
-    public boolean validarCuenta() {
-        return false;
-    }
-
     public double calcularInteres(double tasaInteres) {
         double saldo = consultarSaldo();
-        if (saldo > 0){
-            return saldo * tasaInteres;
-        }
-        return 0.0;
+        return saldo > 0 ? saldo * tasaInteres : 0.0;
     }
 
 

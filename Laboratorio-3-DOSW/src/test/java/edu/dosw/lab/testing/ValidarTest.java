@@ -39,7 +39,7 @@ public class ValidarTest {
     @Test
     public void testValidarClienteNull() {
         boolean resultado = validar.validarCliente(null);
-        assertTrue(resultado);
+        assertFalse(resultado);
     }
 
     @Test
@@ -68,8 +68,7 @@ public class ValidarTest {
 
     @Test
     public void testValidarSaldoLimiteMaximo() {
-        // Validar que no acepte saldos excesivamente altos
         boolean resultado = validar.validarSaldo(1000000.0);
-        assertTrue(resultado); // Debería ser válido
+        assertTrue(resultado);
     }
 }

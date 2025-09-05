@@ -25,7 +25,6 @@ public class CuentaTest {
     public void testDepositarMontoNegativo() {
         CuentaAhorro cuenta = new CuentaAhorro(123, "Banco Test");
         cuenta.depositar(100.0);
-        // En TDD: depositar monto negativo no debería cambiar el saldo
         cuenta.depositar(-20.0);
         assertEquals(100.0, cuenta.consultarSaldo());
     }

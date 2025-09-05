@@ -23,9 +23,9 @@ public class Bankify {
     }
 
     public void registrarCliente(Cliente cliente) {
-
-        if(!clientes.contains(cliente))
+        if (!clientes.contains(cliente)) {
             clientes.add(cliente);
+        }
     }
 
     public void crearCuenta(Cliente cliente, Cuenta cuenta) {
@@ -33,25 +33,19 @@ public class Bankify {
     }
 
     public void realizarDeposito(int numeroCuenta, double monto) {
-        for (Cliente c : clientes) {
-            for (Cuenta cuenta : c.getCuentas()) {
-                if (cuenta.getNumeroCuenta() == numeroCuenta) {
-                    cuenta.depositar(monto);
-                    return;
-                }
-            }
-        }
+    clientes.stream()
+        .flatMap(cliente -> cliente.getCuentas().stream())
+        .filter(cuenta -> cuenta.getNumeroCuenta() == numeroCuenta)
+        .findFirst()
+        .ifPresent(cuenta -> cuenta.depositar(monto));
     }
 
     public double consultarSaldo(int numeroCuenta) {
-
-        for(Cliente c : clientes) {
-            for(Cuenta cuenta : c.getCuentas()) {
-                if(cuenta.getNumeroCuenta() == numeroCuenta) {
-                    return cuenta.consultarSaldo();
-                }
-            }
-        }
-        return 0.0;
+    return clientes.stream()
+        .flatMap(cliente -> cliente.getCuentas().stream())
+        .filter(cuenta -> cuenta.getNumeroCuenta() == numeroCuenta)
+        .findFirst()
+        .map(Cuenta::consultarSaldo)
+        .orElse(0.0);
     }
 }

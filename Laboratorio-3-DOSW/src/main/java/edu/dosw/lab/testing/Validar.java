@@ -10,11 +10,16 @@ public class Validar {
     }
 
     public boolean validarCliente(Cliente cliente) {
-        return false;
+        if (cliente == null) {
+            return false;
+        }
+        return cliente.getNombre() != null && 
+               !cliente.getNombre().trim().isEmpty() && 
+               cliente.getIdCliente() > 0;
     }
 
     public boolean validarSaldo(double saldo) {
-        return false;
+        return saldo >= -1000000.0 && saldo <= 1000000.0;
     }
 
 }

@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
-import edu.dosw.lab.testing.*;
 
 public class BankifyTest {
 
@@ -28,7 +27,7 @@ public class BankifyTest {
     public void testGetBancosConBancosAliados() {
         ArrayList<BancoAliado> bancos = bankify.getBancos();
         assertNotNull(bancos);
-        assertTrue(bancos.size() >= 2); // Esperamos al menos BANCO1 y BANCO2
+        assertTrue(bancos.size() >= 2);
     }
 
     @Test
