@@ -7,7 +7,17 @@ public class CuentaCorriente extends Cuenta {
     }
 
     public void permitirSobregiro(double monto) {
+        double saldoActual = consultarSaldo();
+        double nuevoSaldo = saldoActual - monto;
     }
+
+    @Override
+    public void depositar(double monto) {
+        double nuevoSaldo = consultarSaldo() + monto;
+        setSaldo(nuevoSaldo);
+    }
+
+
 
 
 

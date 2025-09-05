@@ -17,7 +17,7 @@ public class CuentaCorrienteTest {
     @Test
     public void testPermitirSobregiroLimiteMaximo() {
         CuentaCorriente cuenta = new CuentaCorriente(12345, "BancoTest");
-        cuenta.depositar(0.0);
+        cuenta.depositar(200.0);
         cuenta.permitirSobregiro(500.0);
         // Límite de sobregiro de 1000
         assertEquals(-500.0, cuenta.consultarSaldo());

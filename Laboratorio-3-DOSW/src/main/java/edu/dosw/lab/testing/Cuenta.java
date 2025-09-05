@@ -21,9 +21,10 @@ public abstract class Cuenta {
         return saldo;
     }
 
-    public void depositar(double monto) {
-    }
+    public abstract void depositar(double monto);
     public int getNumeroCuenta() {
         return numeroCuenta;
     }
+
+    protected void setSaldo(double saldo) {this.saldo = saldo;}
 }

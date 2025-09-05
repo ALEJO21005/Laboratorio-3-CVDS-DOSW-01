@@ -6,11 +6,21 @@ public class Gestionar {
     private String nombreBanco;
 
     public void gestionarTransaccion(Cuenta cuenta, double monto) {
+        if(cuenta == null) {
+            throw new IllegalArgumentException("La cuenta no puede ser nula");
+        }
+        cuenta.depositar(monto);
     }
 
     public void gestionarDeposito(Cuenta cuenta, double monto) {
+        if(cuenta!= null && monto > 0) {
+            cuenta.depositar(monto);
+        }
     }
 
     public void gestionarRetiro(Cuenta cuenta, double monto) {
+        if (cuenta != null && monto > 0 && cuenta.consultarSaldo() >= monto) {
+            cuenta.depositar(-monto);
+        }
     }
 }

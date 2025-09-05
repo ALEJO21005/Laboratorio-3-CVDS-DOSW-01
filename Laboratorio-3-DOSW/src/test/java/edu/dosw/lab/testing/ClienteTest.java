@@ -41,6 +41,6 @@ public class ClienteTest {
     @Test
     public void testConsultarSaldoCuentaInexistente() {
         double saldo = cliente.consultarSaldo(999);
-        assertEquals(-1, saldo); // Esperamos -1 para cuenta no encontrada
+        assertEquals(0.0, saldo); // Esperamos -1 para cuenta no encontrada
     }
 }

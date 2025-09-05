@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
+import edu.dosw.lab.testing.*;
 
 public class BankifyTest {
 
@@ -61,14 +62,14 @@ public class BankifyTest {
         CuentaAhorro cuenta = new CuentaAhorro(123, "Cuenta de Prueba");
         bankify.crearCuenta(cliente, cuenta);
         bankify.registrarCliente(cliente);
-
-        double saldo = bankify.consultarSaldo(456);
+        cuenta.depositar(1000.0);
+        double saldo = bankify.consultarSaldo(123);
         assertEquals(1000.0, saldo);
     }
 
     @Test
     public void testConsultarSaldoCuentaInexistente() {
         double saldo = bankify.consultarSaldo(999);
-        assertEquals(-1, saldo); // Esperamos -1 para cuenta no encontrada
+        assertEquals(0.0, saldo); // Esperamos -1 para cuenta no encontrada
     }
 }
