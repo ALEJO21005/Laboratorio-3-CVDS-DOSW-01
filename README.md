@@ -155,6 +155,14 @@ Esto significa que el 96% de las líneas de código fueron ejecutadas por las pr
 <img width="1074" height="270" alt="image" src="https://github.com/user-attachments/assets/5309f1ac-33a0-478d-acaa-c7ae40a936d7" />
 <img width="1206" height="256" alt="image" src="https://github.com/user-attachments/assets/658b6eae-cc69-46c2-9809-2f038fc4f443" />
 
+## Reflexiones
+- *Garantizan la calidad y confiabilidad del sistema:*
+  
+Las pruebas permiten detectar errores en etapas tempranas del desarrollo. Con esto se evita que defectos críticos lleguen a producción y afecten al usuario final. Un software probado genera confianza, pues asegura que cumple con los requisitos y funciona de forma estable.
+
+
+
+
 
 
 
