@@ -101,6 +101,39 @@ Facilita la extensión del sistema y mantiene el código abierto a nuevas estrat
   
  ## Votos divergentes
   <img width="831" height="437" alt="image" src="https://github.com/user-attachments/assets/8ba61132-f081-49b4-a360-0981bde60dec" />
+# ✅RETO 4
+## Pruebas test
+<img width="730" height="539" alt="image" src="https://github.com/user-attachments/assets/80b82711-d43e-47f9-9c50-18d362ae9a62" />
+<img width="703" height="372" alt="image" src="https://github.com/user-attachments/assets/80d500b7-401d-470b-b65e-a6ace5ae79ca" />
+<img width="703" height="272" alt="image" src="https://github.com/user-attachments/assets/4398fa1b-81d6-4652-8a68-eafafaca386e" />
+<img width="693" height="232" alt="image" src="https://github.com/user-attachments/assets/6fca82f7-6a85-4901-8150-fd46e1fcb69f" />
+<img width="683" height="428" alt="image" src="https://github.com/user-attachments/assets/e8bae7fe-8765-4a8d-b2bc-2383ffc92e05" />
+<img width="685" height="321" alt="image" src="https://github.com/user-attachments/assets/0ebb37ff-cbaa-4f8d-ac2d-42eb9cd944ae" />
+<img width="697" height="550" alt="image" src="https://github.com/user-attachments/assets/f183cec8-ab7e-4406-b117-d9afc34ac0a3" />
+
+# Principios solid 😎⚡
+- Single Responsibility: Cada clase tiene una sola responsabilidad (Cuenta maneja saldos, Cliente maneja datos del cliente, etc.)
+- Open/Closed: Cuenta es abstracta, permite crear nuevos tipos sin modificar la clase base
+- Liskov Substitution: CuentaAhorro y CuentaCorriente pueden usarse donde se espere Cuenta
+- Dependency Inversion: Se depende de abstracciones (Cuenta) no de implementaciones concretas
+# Patrones de diseño🐱
+- Template Method: Cuenta define estructura común, subclases implementan detalles específicos
+- Facade: Bankify simplifica operaciones complejas del sistema bancario
+- Enum Pattern: BancoAliado para representar bancos de forma type-safe
+# Principios oop🎃
+- Encapsulación: Atributos privados con acceso controlado
+- Herencia: Cuenta → CuentaAhorro/CuentaCorriente
+- Composición: Cliente tiene Cuentas, Bankify tiene Clientes
+- Abstracción: Clase Cuenta abstracta define contratos
+# Programacion funcional👍
+- *Streams:* Para operaciones declarativas (.filter(), .map(), .findFirst())
+- *Lambdas:* Expresiones funcionales para filtros y transformaciones
+- *Immutability:* Streams no modifican colecciones originales
+# Codigo limpio✅👌
+- DRY: Sin duplicación de código
+- Guard Clauses: Validaciones tempranas con early return
+- Separation of Concerns: Cada clase se enfoca en un aspecto específico
+- El diseño combina principios orientados a objetos clásicos con programación funcional moderna, resultando en código mantenible y extensible.
 
 # ✅RETO 5
 <img width="611" height="569" alt="image" src="https://github.com/user-attachments/assets/b003adfc-8b15-4bbe-8903-5e245b4ca55d" />
@@ -117,6 +150,15 @@ El proyecto fue evaluado con *JaCoCo* para medir la cobertura de las pruebas uni
 - *Cobertura de ramas:* 65%  
 
 Esto significa que el 96% de las líneas de código fueron ejecutadas por las pruebas, pero aún hay un 35% de condiciones (if, else, switch, etc.) que no han sido validadas. 
+# ✅RETO 6
+<img width="1199" height="428" alt="image" src="https://github.com/user-attachments/assets/ca6756ea-fe70-40e2-8f70-3592fd6d5b77" />
+<img width="1074" height="270" alt="image" src="https://github.com/user-attachments/assets/5309f1ac-33a0-478d-acaa-c7ae40a936d7" />
+<img width="1206" height="256" alt="image" src="https://github.com/user-attachments/assets/658b6eae-cc69-46c2-9809-2f038fc4f443" />
+
+
+
+
+
 
 
 
